@@ -1,0 +1,15 @@
+# Data files
+*.csv
+
+# LaTeX output
+*.aux
+*.log
+*.out
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS files
+.DS_Store
