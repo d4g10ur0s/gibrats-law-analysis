@@ -10,19 +10,26 @@ Gibrat's Law states that firm growth is a purely random effect and therefore sho
 
 ## Project Structure
 
-project/
-├── data/
-│   └── firms.csv
-├── tables/
-│   ├── summary.tex
-│   ├── categorical.tex
-│   ├── gibrat_firm_results.tex
-│   ├── gibrat_sector_size_results.tex
-│   └── gibrat_sector_sales_results.tex
-├── demo.py
-├── export.py
-├── summaryStatistics.py
-└── README.md
+gibrats-law-analysis/
+|
+├── data/                             # Data directory
+│   └── firms.csv                     # Main dataset
+|
+├── tables/                           # Output tables
+│   ├── summary.tex                   # Summary statistics
+│   ├── categorical/                  # Categorical analysis tables
+│   │   └── *.tex                    # Individual categorical tables
+│   ├── gibrat_firm_results.tex      # Firm-level analysis
+│   ├── gibrat_sector_size_results.tex    # Sector analysis (size)
+│   └── gibrat_sector_sales_results.tex   # Sector analysis (sales)
+|
+├── src/                             # Source code
+│   ├── demo.py                      # Main execution script
+│   ├── export.py                    # LaTeX export utilities
+│   └── summaryStatistics.py         # Statistical analysis functions
+|
+├── .gitignore                       # Git ignore file
+└── README.md                        # Project documentation
 
 ## Code Components
 
