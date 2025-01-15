@@ -8,8 +8,9 @@ Gibrat's Law states that firm growth is a purely random effect and therefore sho
 - Asset-based size measures
 - Sales-based measures
 
-## Project Structure
+# Project Structure
 
+```
 gibrats-law-analysis/
 |
 ├── data/                             # Data directory
@@ -30,6 +31,7 @@ gibrats-law-analysis/
 |
 ├── .gitignore                       # Git ignore file
 └── README.md                        # Project documentation
+```
 
 ## Code Components
 
