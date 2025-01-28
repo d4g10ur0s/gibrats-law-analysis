@@ -1,0 +1,41 @@
+\begin{table}[htbp]
+\centering
+\caption{IV Regression Results with Country and Industry Fixed Effects}
+\label{tab:heterogeneity}
+\begin{tabular}{lcccc}
+\hline\hline
+& \multicolumn{2}{c}{First Stage} & \multicolumn{2}{c}{Second Stage} \\
+& \multicolumn{2}{c}{(Ownership Concentration)} & \multicolumn{2}{c}{(Tobin's Q)} \\
+\cline{2-3} \cline{4-5}
+Variable & Coefficient & Std. Error & Coefficient & Std. Error \\
+CPI & -0.1148*** & (0.0251) & -- & -- \\
+Growth_sales & 0.0041 & (0.0049) & 0.0086 & (0.0717) \\
+HI_conc & 0.0009*** & (0.0000) & 0.0005*** & (0.0001) \\
+JSEI & -0.8543* & (0.5172) & -- & -- \\
+LN_SMCap_GDP & -1.0502*** & (0.2508) & -- & -- \\
+Leverage & 0.0334 & (0.1392) & -0.0508 & (0.1666) \\
+PM & -0.0019 & (0.0018) & 0.0061*** & (0.0014) \\
+Size & 0.0199 & (0.0143) & -0.0600*** & (0.0102) \\
+const & 17.4592*** & (2.0548) & 4.6775*** & (0.3691) \\
+country_ES & -0.8052 & (0.5599) & 0.3254*** & (0.0952) \\
+country_FR & 0.1262 & (0.3768) & 0.0538 & (0.0457) \\
+country_IT & -3.9627*** & (1.0712) & -0.0189 & (0.0607) \\
+industry_G - Wholesale and retail trade; repair of motor vehicles and motorcycles & 0.0466 & (0.1369) & -0.1333* & (0.0684) \\
+industry_J - Information and communication & 0.3023*** & (0.1032) & 0.1398** & (0.0577) \\
+industry_L - Real estate activities & 0.1580 & (0.1585) & -0.5732*** & (0.0704) \\
+industry_M - Professional, scientific and technical activities & 0.2544*** & (0.0767) & 0.1321*** & (0.0494) \\
+\hline
+Observations & \multicolumn{4}{c}{16} \\
+R-squared & \multicolumn{2}{c}{0.5034} & \multicolumn{2}{c}{0.0704} \\
+
+Fixed Effects Tests & \multicolumn{4}{c}{F-statistic (p-value)} \\
+Country Effects & \multicolumn{4}{c}{4.74 (0.0027)} \\
+Industry Effects & \multicolumn{4}{c}{30.42 (0.0000)} \\
+\hline\hline
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Notes: Standard errors in parentheses. *** p<0.01, ** p<0.05, * p<0.1
+\item Country and industry fixed effects included in both stages
+\end{tablenotes}
+\end{table}
